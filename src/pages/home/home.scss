@@ -1,0 +1,76 @@
+page-home {
+    .toolbar-title-ios {
+        font-size: 2.4rem;
+        font-weight: normal;
+    }
+    ion-slides {
+        height: 70vh;
+    }
+
+    .scroll-content {
+        padding-top: 0 !important;
+    }
+
+    .bar-buttons,
+    .bar-button,
+    .toolbar-title {
+        color: #fff;
+    }
+
+    .uppercase {
+        text-transform: uppercase;
+    }
+
+    span.button-inner {
+        text-transform: uppercase;
+    }
+
+    ion-slide {
+        color: white;
+        position: relative;
+
+        small {
+            display: block;
+            font-size: 65%;
+        }
+        .bottom-text {
+            left: 0;
+            right: 0;
+            bottom: 10%;
+            position: absolute;
+        }
+
+        .big-title {
+            font-size: 6rem;
+        }
+
+        .slide-zoom {
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            width:100%;
+            background: linear-gradient(0deg, rgba(226, 135, 106, 0.84) 0%, rgba(255, 93, 152, 0.85) 100%) !important;
+            height: 100%;
+        }
+
+        &.slide-background {
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            border-color: transparent !important;
+        }
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #fff !important;
+        border: none;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: transparent;
+        border: 1px solid white !important;
+        width: 14px;
+        height: 14px;
+        opacity: 1;
+    }
+}

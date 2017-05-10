@@ -1,0 +1,37 @@
+<ion-header no-border>
+  <ion-navbar transparent>
+     <ion-buttons start>
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-buttons>
+
+    <ion-title class="header-font uppercase">Thursday</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="water"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-slides pager>
+    <ion-slide *ngFor="let step of steps"
+              class="slide-background"
+              [ngStyle]="{ 'background': 'url(' + step.imageUrl + ')'}">
+      <div class="slide-content">
+        <span class="header-font big-title uppercase">{{ step.title }}</span>
+        <small class="uppercase">{{ step.goal }}</small>
+        <small class="bottom-text uppercase">WHAT IS RESISTANCE?</small>
+        <button ion-button round color="dark">Click here</button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+  <ion-list>
+    <ion-item>
+      Random Item
+    </ion-item>
+  </ion-list>
+</ion-content>
